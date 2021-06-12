@@ -9,6 +9,11 @@ body{
     background-color: #ebf2ff;
 }
 
+.container{
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
 .navbar{
     display: flex;
     align-items: center;
@@ -23,6 +28,20 @@ body{
 .navbar__logo{
     width: 100%;
 }
+
+.button__primary{
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+      );
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+ }
 
 .nav__item{
     background-image: linear-gradient(
@@ -42,22 +61,55 @@ body{
     border: 3px solid blue;
 }
 
+.hero__image__container{
+    display: flex;
+    width: 100%;
+}
+
+.hero__image{
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    border-radius: 8px;
+
+}
 @media (min-width: 768px) {
     .navbar{
         justify-content: space-between;
         padding: 5px 30px;
     }
+
+    .hero__container{
+        margin: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
 }
 
 @media (min-width: 1020px) {
+    .container{
+        width: 900px;
+    }
     .navbar__brand{
         width: 150px;
     }
 
-    .nav__item{
+    .button__primary{
         padding: 20px;
         font-size: 20px;
     }
 
+    .hero__description{
+        width: 100%;
+    }
 
+    .hero__text{
+        
+    }
+
+
+}
+
+@media (min-width: 1400px) {
+    
 }
