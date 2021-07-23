@@ -10,17 +10,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <nav class="navbar">
             <div class="navbar__brand">
                 <img src="assets/logo.png" alt="logo" class="navbar__logo">
             </div>
             <div class="navbar__nav__items">
                 <button class="nav__item button__primary">Order Food</button>
-            </div>
-            <div class="hero__description">
-                <h1>Order food from your favourite restaurants near you.</h1>
-                <button class="button__primary">Order Food</button>
             </div>
         </nav>
     </header>
@@ -30,17 +26,129 @@
         <section class="hero__container">
             <div class="hero__image__container">
                 <img src="./assets/hero.jpg" alt="hero" class="hero__image">
-                <img src="./assets/herobgpattren.svg" alt="svg1">
-                <img src="./assets/heroShape.svg" alt="svg2">
+                <div class="hero__svg">
+                    <img src="./assets/herobgpattren.svg" alt="svg1" id="svg1">
+                    <img src="./assets/heroShape.svg" alt="svg2" id="svg2">
+                </div>
+            </div>
+            <div class="hero__description">
+                <h1 class="hero__text">Order food from your favourite restaurants near you.</h1>
+                <button class="button__primary">Order Food</button>
             </div>
         </section>
 
+        <!-- Explore Menu -->
+        
         <section class="explore__menu__container">
-            <h1 class="explore__menu__text">Explore our menu</h1>
+            <h1 class="explore__menu__text">Explore Our Menu</h1>
+            <div class="explore__menu__gradient__bg"></div>
             <div class="explore__menu__lists">
-                
+                <!-- Burger -->
+                <div class="food__card">
+                    <div class="food__card__image__container">
+                            <img src="./assets/burger.jpg" alt="burger" class="food__image">
+                    </div>
+                    <div class="food__card__description">
+                        <h3 class="food__title">Burger</h3>
+                        <p>
+                            Burger King, McDonalds, Burger Place
+                            <span style="color: red;">+3</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- Pizza -->
+                <div class="food__card" id="pizza__card">
+                    <div class="food__card__image__container">
+                            <img src="./assets/pizza.jpg" alt="pizza" class="food__image">
+                    </div>
+                    <div class="food__card__description">
+                        <h3 class="food__title">Pizza</h3>
+                        <p>
+                          Pizza Hut, Domino's Pizza  
+                            <span style="color: red;">+3</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="food__card">
+                    <div class="food__card__image__container">
+                            <img src="./assets/iceCream.jpg" alt="iceCream" class="food__image">
+                    </div>
+                    <div class="food__card__description">
+                        <h3 class="food__title">iceCream</h3>
+                        <p>
+                            Baskin Robins, Ibaco
+                            <span style="color: red;">+3</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="explore__menu__view__more">
+                <button class="button__primary" id="btn__view__more">View More</button>
             </div>
         </section>
+
+        <!-- Restaurant List -->
+
+        <section class="restaurant__container">
+            <h1 class="restaurant__text">Order From 100s of restaurants</h1>
+            <div class="restaurant__images__container">
+                <div class="restaurant__images__row__one">
+                    <div class="restaurant__image__1">
+                        <img src="./assets/restaurant1.jpg" alt="restaurant1" class="restaurant__1">
+                    </div>
+                    <div class="restaurant__image__2">
+                        <img src="./assets/restaurant2.jpg" alt="restaurant2" class="restaurant__2">
+                    </div>
+                </div>
+                <div class="restaurant__images__row__two">
+                    <div class="restaurant__image__3">
+                        <img src="./assets/restaurant4.jpg" alt="restaurant3" class="restaurant__3">
+                    </div>
+                    <div class="restaurant__image__4">
+                        <img src="./assets/restaurant3.jpg" alt="restaurant4" class="restaurant__4">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- email -->
+        <section class="email__container">
+            <div class="email__items">
+                <h1 class="email__update">Stay Updated</h1>
+                <div class="email__input">
+                    <input type="email" placeholder="example@email.com" class="email">
+                    <button class="email__submit button__primary">Get Updates</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote -->
+
+        <section class="quote__container">
+            <div class="quote__items">    
+                <div class="quote__image">
+                    <img src="./assets/jason-dent-S53ekmu8KkE-unsplash.jpg" alt="quote" id="quote__image">
+                    <h3 class="quote__text__h3">
+                        When a man's stomach is full it makes no difference whether he is rich
+                        or poor.
+                      </h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <img src="./assets/logo.png" alt="logo" id="logo">
+            <ul >
+                <li>Pricing</li>
+                <li>Terms and Conditions</li>
+                <li>Partnership</li>
+                <li>Career</li>
+                <li>Contact</li>
+            </ul>
+    </footer>
     </main>
 </body>
 </html>
